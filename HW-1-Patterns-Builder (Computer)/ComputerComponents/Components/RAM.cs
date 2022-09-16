@@ -9,17 +9,17 @@ namespace HW_1_Patterns_Builder__Computer_.Components
         public RAM(string name, string manufacturer, string features, int cost) : base("RAM", name, manufacturer, features, cost)
         { }
 
-        public ComponentBase LowConfiguration(string name = "2×8 GB", string manufacturer = "AMD", string features = "DDR4 2666 MGz", int cost = 2000)
+        public ComponentBase LowConfiguration(string name = "2*8 GB", string manufacturer = "AMD", string features = "DDR4 2666 MGz", int cost = 2000)
         {
             return new RAM(name, manufacturer, features, cost);
         }
 
-        public ComponentBase MiddleConfiguration(string name = "2×16 GB", string manufacturer = "Kingston", string features = "DDR4 3600 MGz", int cost = 4500)
+        public ComponentBase MiddleConfiguration(string name = "2*16 GB", string manufacturer = "Kingston", string features = "DDR4 3600 MGz", int cost = 4500)
         {
             return new RAM(name, manufacturer, features, cost);
         }
 
-        public ComponentBase HighConfiguration(string name = "2×32 GB", string manufacturer = "G.Skill", string features = "DDR4 3600 MGz", int cost = 10000)
+        public ComponentBase HighConfiguration(string name = "2*32 GB", string manufacturer = "G.Skill", string features = "DDR4 3600 MGz", int cost = 10000)
         {
             return new RAM(name, manufacturer, features, cost);
         }

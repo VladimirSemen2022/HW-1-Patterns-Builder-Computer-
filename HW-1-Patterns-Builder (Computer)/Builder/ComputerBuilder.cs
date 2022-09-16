@@ -35,7 +35,6 @@ namespace HW_1_Patterns_Builder__Computer_.Builder
             this._computer.Add(ram.LowConfiguration());
             this._computer.Add(hdd.LowConfiguration());
             this._computer.Add(vc.LowConfiguration());
-            this.Cost = pr.Cost + mb.Cost + ram.Cost + hdd.Cost + vc.Cost;
         }
 
         public void BuildMiddleConfiguration()
@@ -50,7 +49,6 @@ namespace HW_1_Patterns_Builder__Computer_.Builder
             this._computer.Add(ram.MiddleConfiguration());
             this._computer.Add(hdd.MiddleConfiguration());
             this._computer.Add(vc.MiddleConfiguration());
-            this.Cost = pr.Cost + mb.Cost + ram.Cost + hdd.Cost + vc.Cost;
         }
 
         public void BuildHighConfiguration()
@@ -65,7 +63,6 @@ namespace HW_1_Patterns_Builder__Computer_.Builder
             this._computer.Add(ram.HighConfiguration());
             this._computer.Add(hdd.HighConfiguration());
             this._computer.Add(vc.HighConfiguration());
-            this.Cost = pr.Cost + mb.Cost + ram.Cost + hdd.Cost + vc.Cost;
         }
 
         public void BuildMyConfiguration()
@@ -110,9 +107,7 @@ namespace HW_1_Patterns_Builder__Computer_.Builder
         public MyComputer GetComputer()
         {
             MyComputer result = this._computer;
-
             this.Reset();
-
             return result;
         }
     }
